@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>General Store</h1>
+    <p class="lead">A place to track products, customers, and transactions at the General Store</p>
+    @Html.ActionLink("Learn More About Us", "About")
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Products</h2>
+        <p>
+            Our General Store, located in rural Indiana, is host to a multitude of fine food and items of distinction.<br/>
+            Come browse our products and see what we have for you. 
+        </p>
+        @Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large"})
+    </div>
+    <div class="col-md-4">
+        <h2>Customers</h2>
+        <p>Here is where you can view all of the customers</p>
+        @Html.ActionLink("Check Customers", "Index", "Customer", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+    <div class="col-md-4">
+        <h2>Transaction</h2>
+        <p>Here you can view the transactions.</p>
+        @Html.ActionLink("Transactions", "Index", "Transaction", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+</div>
